@@ -103,7 +103,7 @@
       <setupTask
           xsi:type="setup:EclipseIniTask"
           option="-Doomph.redirection.zplatformprojectssetups"
-          value="=index:/redirectable.projects.setup->https://github.com/nbhusare/oomph-test/blob/master/oomph-files/ZPlatform.setup"
+          value="=index:/redirectable.projects.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/ZPlatform.setup"
           vm="true">
         <description>Add projects redirect</description>
       </setupTask>
