@@ -96,14 +96,14 @@
       <setupTask
           xsi:type="setup:EclipseIniTask"
           option="-Doomph.redirection.zplatformproductssetups"
-          value="=index:/redirectable.products.setup->https://raw.githubusercontent.com/ZafinLabs/zplatform/NB_Oomph_test/setups/ZPlatformProductCatalog.setup?token=ADLIi2wFr8Key79Q4AGdr8HrDJUbqTrMks5YV6iJwA%3D%3D"
+          value="=index:/redirectable.products.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/ZPlatformProductCatalog.setup"
           vm="true">
         <description>Add products redirect</description>
       </setupTask>
       <setupTask
           xsi:type="setup:EclipseIniTask"
           option="-Doomph.redirection.zplatformprojectssetups"
-          value="=index:/redirectable.projects.setup->https://raw.githubusercontent.com/ZafinLabs/zplatform/NB_Oomph_test/setups/ZPlatform.setup?token=ADLIizaxwVyRzbKBQsxgI8R93pXS_U4Aks5YV6hPwA%3D%3D"
+          value="=index:/redirectable.projects.setup->https://github.com/nbhusare/oomph-test/blob/master/oomph-files/ZPlatform.setup"
           vm="true">
         <description>Add projects redirect</description>
       </setupTask>
