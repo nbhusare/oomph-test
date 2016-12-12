@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Product
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
+    name="productone"
+    label="product one">
+  <setupTask
+      xsi:type="setup.p2:P2Task">
+    <requirement
+        name="org.eclipse.oomph.setup.feature.group"/>
+    <repository
+        url="${oomph.update.url}"/>
+  </setupTask>
+  <version name="mars"
+      label="Mars"
+      requiredJavaVersion="1.8">
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP"
+        option="-Doomph.redirection.wimiprojectsetups"
+        value="=index:/redirectable.projects.setup->https://raw.githubusercontent.com/mwirth/oomph-play-1/master/mw-setups/org.wimi.eclipse.projects.setup"
+        vm="true"/>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        label="Eclipse IDE for Java Developers (Mars)">
+      <requirement
+          name="epp.package.java"
+          versionRange="[4.5.0,4.6.0)"/>
+      <requirement
+          name="org.eclipse.platform.feature.group"
+          versionRange="[4.5.0,4.6.0)"/>
+      <requirement
+          name="org.eclipse.rcp.feature.group"
+          versionRange="[4.5.0,4.6.0)"/>
+      <requirement
+          name="org.eclipse.jdt.feature.group"
+          versionRange="[3.11.0,3.12.0)"/>
+      <repository
+          url="http://download.eclipse.org/technology/epp/packages/mars"/>
+      <repository
+          url="http://download.eclipse.org/releases/mars/201602261000"/>
+    </setupTask>
+  </version>
+  <description>product one</description>
+</setup:Product>
