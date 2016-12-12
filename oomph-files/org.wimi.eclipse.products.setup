@@ -32,13 +32,13 @@
           xsi:type="setup:EclipseIniTask"
           excludedTriggers="STARTUP"
           option="-Doomph.redirection.wimiprojectsetups"
-          value="=index:/redirectable.projects.setup->https://raw.githubusercontent.com/mwirth/oomph-play-1/master/mw-setups/org.wimi.eclipse.projects.setup"
+          value="=index:/redirectable.projects.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/org.wimi.eclipse.projects.setup"
           vm="true"/>
       <setupTask
           xsi:type="setup:EclipseIniTask"
           excludedTriggers="STARTUP"
           option="-Doomph.redirection.wimiproductsetups"
-          value="=index:/redirectable.products.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/org.wimi.eclipse.projects.setup"
+          value="=index:/redirectable.products.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/org.wimi.eclipse.products.setup"
           vm="true"/>
       <setupTask
           xsi:type="setup.p2:P2Task"
