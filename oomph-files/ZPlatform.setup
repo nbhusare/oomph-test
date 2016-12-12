@@ -1971,7 +1971,7 @@
     <setupTask
         xsi:type="git:GitCloneTask"
         id="git.clone.zplatform"
-        remoteURI="https://github.com/ZafinLabs/zplatform.git">
+        remoteURI="ZafinLabs/zplatform">
       <annotation
           source="http://www.eclipse.org/oomph/setup/InducedChoices">
         <detail
