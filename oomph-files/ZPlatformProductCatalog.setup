@@ -7,20 +7,6 @@
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
     name="com.zafin.zplatform.products"
     label="zPlatform Products">
-  <setupTask
-      xsi:type="setup:EclipseIniTask"
-      option="-Doomph.redirection.zPlatformEclipseProducts"
-      value="https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/ZPlatformProductCatalog.setup"
-      vm="true">
-    <description>Add products redirect</description>
-  </setupTask>
-  <setupTask
-      xsi:type="setup:EclipseIniTask"
-      option="-Doomph.redirection.zPlatformEclipseProjects"
-      value="=https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/ZPlatform.setup"
-      vm="true">
-    <description>Add projects redirect</description>
-  </setupTask>
   <product name="zplatform"
       label="zplatform">
     <annotation
@@ -106,6 +92,20 @@
         <repository
             url="${oomph.update.url}"/>
         <description></description>
+      </setupTask>
+      <setupTask
+          xsi:type="setup:EclipseIniTask"
+          option="-Doomph.redirection.zplatformproductssetups"
+          value="=index:/redirectable.projects.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/ZPlatformProductCatalog.setup"
+          vm="true">
+        <description>Add products redirect</description>
+      </setupTask>
+      <setupTask
+          xsi:type="setup:EclipseIniTask"
+          option="-Doomph.redirection.zplatformprojectssetups"
+          value="=index:/redirectable.projects.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/ZPlatform.setup"
+          vm="true">
+        <description>Add projects redirect</description>
       </setupTask>
     </version>
   </product>

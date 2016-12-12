@@ -2105,11 +2105,6 @@
         xsi:type="projects:ProjectsBuildTask"
         refresh="true"
         clean="true"/>
-    <setupTask
-        xsi:type="setup:EclipseIniTask"
-        option="-Doomph.redirection.zPlatformEclipseProducts="
-        value="https://github.com/nbhusare/oomph-test/blob/master/oomph-files/ZPlatformProductCatalog.setup->${git.clone.zplatform.location|uri}/git/zplatform/setups/ZPlatformProductCatalog.setup"
-        vm="true"/>
     <stream
         name="NB_Oomph_test">
       <description></description>
