@@ -10,14 +10,14 @@
   <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Doomph.redirection.zPlatformEclipseProducts"
-      value="=index:/redirectable.products.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/ZPlatformProductCatalog.setup"
+      value="https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/ZPlatformProductCatalog.setup"
       vm="true">
     <description>Add products redirect</description>
   </setupTask>
   <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Doomph.redirection.zPlatformEclipseProjects"
-      value="=index:/redirectable.projects.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/ZPlatform.setup"
+      value="=https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/ZPlatform.setup"
       vm="true">
     <description>Add projects redirect</description>
   </setupTask>
