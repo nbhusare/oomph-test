@@ -2106,7 +2106,7 @@
         refresh="true"
         clean="true"/>
     <stream
-        name="master">
+        name="develop">
       <description></description>
     </stream>
     <description>zPlatform provides very cool stuff</description>
