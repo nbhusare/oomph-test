@@ -42,13 +42,6 @@
     </setupTask>
     <setupTask
         xsi:type="setup:VariableTask"
-        name="git.clone.remoteURI"
-        defaultValue="git@github.com:ZafinLabs/zplatform.git"
-        label="Github repository">
-      <description>Choose from the available Github URIs</description>
-    </setupTask>
-    <setupTask
-        xsi:type="setup:VariableTask"
         name="eclipse.target.platform"
         value="Neon"
         defaultValue="Neon"
@@ -1971,7 +1964,7 @@
     <setupTask
         xsi:type="git:GitCloneTask"
         id="git.clone.zplatform"
-        remoteURI="ZafinLabs/zplatform">
+        remoteURI="https://github.com/nbhusare/oomph-test.git">
       <annotation
           source="http://www.eclipse.org/oomph/setup/InducedChoices">
         <detail
@@ -2106,7 +2099,7 @@
         refresh="true"
         clean="true"/>
     <stream
-        name="NB_Oomph_test">
+        name="master">
       <description></description>
     </stream>
     <description>zPlatform provides very cool stuff</description>
