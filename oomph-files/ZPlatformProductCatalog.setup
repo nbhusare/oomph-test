@@ -24,15 +24,6 @@
         content="MAX_RECENT_WORKSPACES=5&#xA;RECENT_WORKSPACES=${workspace.location|property}&#xA;RECENT_WORKSPACES_PROTOCOL=3&#xA;SHOW_WORKSPACE_SELECTION_DIALOG=false&#xA;eclipse.preferences.version=1&#xA;"
         targetURL="configuration:/.settings/org.eclipse.ui.ide.prefs"
         encoding="UTF-8"/>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
-        label="Oomph">
-      <requirement
-          name="org.eclipse.oomph.setup.feature.group"/>
-      <repository
-          url="${oomph.update.url}"/>
-      <description></description>
-    </setupTask>
     <version
         name="latest"
         label="Neon"
@@ -94,6 +85,15 @@
         <repository
             url="http://download.eclipse.org/releases/neon/201610111000"/>
         <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Oomph">
+        <requirement
+            name="org.eclipse.oomph.setup.feature.group"/>
+        <repository
+            url="${oomph.update.url}"/>
+        <description></description>
       </setupTask>
     </version>
   </product>
