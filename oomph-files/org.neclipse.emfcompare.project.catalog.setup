@@ -16,7 +16,7 @@
       id="workspace"/>
   <setupTask
       xsi:type="setup:VariableTask"
-      name="git.clone.neclipse.emfcompare.remoteURI"
+      name="git.clone.remoteURI"
       defaultValue="git@github.com:nbhusare/EMF-Compare"
       label="Github repository">
     <description>Choose from the available Github URIs</description>
