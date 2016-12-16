@@ -14,6 +14,13 @@
   <setupTask
       xsi:type="setup:WorkspaceTask"
       id="workspace"/>
+  <setupTask
+      xsi:type="setup:VariableTask"
+      name="git.clone.neclipse.emfcompare.remoteURI"
+      defaultValue="git@github.com:nbhusare/EMF-Compare"
+      label="Github repository">
+    <description>Choose from the available Github URIs</description>
+  </setupTask>
   <project name="EMFCompare"
       label="EMFCompare">
     <setupTask
@@ -32,7 +39,7 @@
     <setupTask
         xsi:type="git:GitCloneTask"
         id="git.clone.neclipse.emfcompare"
-        remoteURI="https://github.com/nbhusare/EMF-Compare.git">
+        remoteURI="nbhusare/EMF-Compare">
       <description>Clone the EMF Compare Custom Project</description>
     </setupTask>
     <setupTask
