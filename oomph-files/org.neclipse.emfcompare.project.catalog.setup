@@ -38,7 +38,7 @@
     <setupTask
         xsi:type="projects:ProjectsImportTask">
       <sourceLocator
-          rootFolder="git.clone.neclipse.emfcompare.location"/>
+          rootFolder="${git.clone.neclipse.emfcompare.location}"/>
     </setupTask>
     <stream
         name="master"
