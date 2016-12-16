@@ -70,6 +70,18 @@
           option="-Xmx"
           value="2048m"
           vm="true"/>
+      <setupTask
+          xsi:type="setup:EclipseIniTask"
+          excludedTriggers="STARTUP"
+          option="-Doomph.redirection.neproduct"
+          value="=index:/redirectable.products.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/org.neclipse.emfcompare.product.catalog.setup"
+          vm="true"/>
+      <setupTask
+          xsi:type="setup:EclipseIniTask"
+          excludedTriggers="STARTUP"
+          option="-Doomph.redirection.neproject"
+          value="=index:/redirectable.products.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/org.neclipse.emfcompare.project.catalog.setup"
+          vm="true"/>
     </version>
     <description>EMF Compare Customization Product</description>
   </product>
