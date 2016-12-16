@@ -21,13 +21,13 @@
   </setupTask>
   <setupTask
       xsi:type="setup:EclipseIniTask"
-      option="-Doomph.redirection.myProductCatalog"
-      value="=index:/redirectable.products.setup->file://C:/Zafin/Oomph/eclipse-installer/com.zafin.zplatform.product.setup"
+      option="-Doomph.redirection.zafinproduct"
+      value="=index:/redirectable.products.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/com.zafin.zplatform.product.setup"
       vm="true"/>
   <setupTask
       xsi:type="setup:EclipseIniTask"
-      option="-Doomph.redirection.myProjectCatalog"
-      value="=index:/redirectable.projects.setup->file://C:/Zafin/Oomph/eclipse-installer/com.zafin.zplatform.projects.setup"
+      option="-Doomph.redirection.zafinproject"
+      value="=index:/redirectable.projects.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/com.zafin.zplatform.projects.setup"
       vm="true"/>
   <product name="zplatform"
       label="zplatform">
