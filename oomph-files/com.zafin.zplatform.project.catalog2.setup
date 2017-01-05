@@ -1989,7 +1989,7 @@
     </setupTask>
     <setupTask
         xsi:type="git:GitCloneTask"
-        id="git.clone.zplatform"
+        id="git.clone"
         remoteURI="https://nbhusare@bitbucket.org/zafinworks/zplatform.git">
       <description>${scope.project.label}</description>
     </setupTask>
@@ -1997,12 +1997,12 @@
         xsi:type="maven:MavenImportTask"
         projectNameTemplate="">
       <sourceLocator
-          rootFolder="${git.clone.zplatform.location}"
+          rootFolder="${git.clone.location}"
           locateNestedProjects="true"/>
       <sourceLocator
-          rootFolder="${git.clone.zplatform.location/com.zafin.zplatform/bundles/workbench.target}"/>
+          rootFolder="${git.clone.location/com.zafin.zplatform/bundles/workbench.target}"/>
       <sourceLocator
-          rootFolder="${git.clone.zplatform.location/com.zafin.zplatform/ear}"/>
+          rootFolder="${git.clone.location/com.zafin.zplatform/ear}"/>
     </setupTask>
     <setupTask
         xsi:type="setup.targlets:TargletTask">
