@@ -1990,7 +1990,7 @@
     <setupTask
         xsi:type="git:GitCloneTask"
         id="git.clone.zplatform"
-        remoteURI="git@bitbucket.org:zafinworks/zplatform.git">
+        remoteURI="https://vcottagiri@bitbucket.org/zafinworks/zplatform.git">
       <description>${scope.project.label}</description>
     </setupTask>
     <setupTask
