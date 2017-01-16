@@ -22,12 +22,12 @@
   <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Doomph.redirection.zafinproduct"
-      value="=index:/redirectable.products.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/com.zafin.zplatform.product.catalog.setup"
+      value="=index:/redirectable.products.setup->https://raw.githubusercontent.com/vcottagiri/oomph-test/patch-1/oomph-files/com.zafin.zplatform.product.catalog.setup"
       vm="true"/>
   <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Doomph.redirection.zafinproject"
-      value="=index:/redirectable.projects.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/com.zafin.zplatform.project.catalog.setup"
+      value="=index:/redirectable.projects.setup->https://raw.githubusercontent.com/vcottagiri/oomph-test/patch-1/oomph-files/com.zafin.zplatform.project.catalog.setup"
       vm="true"/>
   <product name="zplatform"
       label="zplatform">

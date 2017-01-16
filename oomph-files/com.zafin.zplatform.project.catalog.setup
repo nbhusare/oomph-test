@@ -1990,7 +1990,7 @@
     <setupTask
         xsi:type="git:GitCloneTask"
         id="git.clone.zplatform"
-        remoteURI="https://github.com/ZafinLabs/zplatform.git">
+        remoteURI="https://bitbucket.org/zafinworks/zplatform.git">
       <description>${scope.project.label}</description>
     </setupTask>
     <setupTask
@@ -2114,8 +2114,8 @@
         refresh="true"
         clean="true"/>
     <stream
-        name="NB_ZP-618_02"
-        label="NB_ZP-618_02"/>
+        name="NB_ZP-618_03"
+        label="NB_ZP-618_03"/>
     <logicalProjectContainer
         xsi:type="setup:ProjectCatalog"
         href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
