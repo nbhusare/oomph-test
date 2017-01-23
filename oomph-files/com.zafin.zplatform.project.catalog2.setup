@@ -59,12 +59,12 @@
           xsi:type="setup:VariableTask"
           id="xtext.update.site"
           name="xtext.update.site"
-          value="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.8.2/"/>
+          value="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.10.0/"/>
       <setupTask
           xsi:type="setup:VariableTask"
           name="eclipse.target.platform"
-          value="Mars"
-          defaultValue="Mars"
+          value="Neon"
+          defaultValue="Neon"
           storageURI="scope://Workspace"/>
       <description></description>
     </setupTask>
@@ -1989,7 +1989,7 @@
     </setupTask>
     <setupTask
         xsi:type="git:GitCloneTask"
-        id="git.clone"
+        id="git.clone.zplatform"
         remoteURI="https://bitbucket.org/zafinworks/zplatform.git">
       <description>${scope.project.label}</description>
     </setupTask>
@@ -1997,12 +1997,12 @@
         xsi:type="maven:MavenImportTask"
         projectNameTemplate="">
       <sourceLocator
-          rootFolder="${git.clone.location}"
+          rootFolder="${git.clone.zplatform.location}"
           locateNestedProjects="true"/>
       <sourceLocator
-          rootFolder="${git.clone.location/com.zafin.zplatform/bundles/workbench.target}"/>
+          rootFolder="${git.clone.zplatform.location/com.zafin.zplatform/bundles/workbench.target}"/>
       <sourceLocator
-          rootFolder="${git.clone.location/com.zafin.zplatform/ear}"/>
+          rootFolder="${git.clone.zplatform.location/com.zafin.zplatform/ear}"/>
     </setupTask>
     <setupTask
         xsi:type="setup.targlets:TargletTask">
@@ -2031,9 +2031,9 @@
         <requirement
             name="org.activiti.designer.feature.feature.group"/>
         <repositoryList
-            name="Mars">
+            name="Neon">
           <repository
-              url="http://download.eclipse.org/releases/mars/201510021000/"/>
+              url="http://download.eclipse.org/releases/neon/201610111000"/>
           <repository
               url="http://download.eclipse.org/cbi/updates/license"/>
           <repository
@@ -2114,8 +2114,8 @@
         refresh="true"
         clean="true"/>
     <stream
-        name="develop"
-        label="develop"/>
+        name="NB_ZP-618_02"
+        label="NB_ZP-618_02"/>
     <logicalProjectContainer
         xsi:type="setup:ProjectCatalog"
         href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
