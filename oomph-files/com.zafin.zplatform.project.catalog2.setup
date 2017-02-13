@@ -2031,7 +2031,7 @@
         <requirement
             name="org.activiti.designer.feature.feature.group"/>
         <requirement
-            name="org.eclipse.xtext.tests.feature.group"/>
+            name="org.eclipse.xtext.testing.feature.group"/>
         <repositoryList
             name="Neon">
           <repository
