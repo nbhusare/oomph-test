@@ -2030,6 +2030,8 @@
             name="de.cau.cs.kieler.klighd.sdk.feature.feature.group"/>
         <requirement
             name="org.activiti.designer.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.xtext.tests.feature.group"/>
         <repositoryList
             name="Neon">
           <repository
