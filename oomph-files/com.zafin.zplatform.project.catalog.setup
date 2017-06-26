@@ -24,8 +24,8 @@
       label="zplatform">
     <setupTask
         xsi:type="jdt:JRETask"
-        version="JavaSE-1.7"
-        location="${jre.location-1.7}">
+        version="JavaSE-1.8"
+        location="${jre.location-1.8}">
       <description>Define the JRE needed to compile and run the Java projects of ${scope.project.label}</description>
     </setupTask>
     <setupTask
@@ -63,8 +63,8 @@
       <setupTask
           xsi:type="setup:VariableTask"
           name="eclipse.target.platform"
-          value="Neon"
-          defaultValue="Neon"
+          value="Oxygen"
+          defaultValue="Oxygen"
           storageURI="scope://Workspace"/>
       <description></description>
     </setupTask>
@@ -2114,8 +2114,8 @@
         refresh="true"
         clean="true"/>
     <stream
-        name="NB_ZP-618_02"
-        label="NB_ZP-618_02"/>
+        name="CIT"
+        label="CIT"/>
     <logicalProjectContainer
         xsi:type="setup:ProjectCatalog"
         href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
