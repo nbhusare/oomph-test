@@ -2035,9 +2035,9 @@
         <requirement
             name="org.activiti.designer.feature.feature.group"/>
         <repositoryList
-            name="Neon">
+            name="Oxygen">
           <repository
-              url="http://download.eclipse.org/releases/neon/201610111000"/>
+              url="http://download.eclipse.org/eclipse/updates/4.7milestones"/>
           <repository
               url="http://download.eclipse.org/cbi/updates/license"/>
           <repository
