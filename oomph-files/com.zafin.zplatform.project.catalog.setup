@@ -2097,20 +2097,21 @@
       <setupTask
           xsi:type="launching:LaunchTask"
           id="shared-build"
-          launcher="shared">
+          filter=""
+          launcher="zplatform/com.zafin.zplatform/shared">
         <description>Launches the Maven &quot;shared&quot; build</description>
       </setupTask>
       <setupTask
           xsi:type="launching:LaunchTask"
           id="eclipse-plugin-build"
-          launcher="eclipse-plugin">
+          launcher="zplatform/com.zafin.zplatform/eclipse-plugin">
         <description>Launches the Maven &quot;eclipse-plugin&quot; build</description>
       </setupTask>
       <setupTask
           xsi:type="launching:LaunchTask"
           id="server-build"
           filter=""
-          launcher="server">
+          launcher="zplatform/com.zafin.zplatform/server">
         <description>Launches the Maven &quot;server&quot; build</description>
       </setupTask>
     </setupTask>
