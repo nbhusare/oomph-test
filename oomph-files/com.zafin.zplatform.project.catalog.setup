@@ -110,6 +110,8 @@
             name="org.sonarlint.eclipse.feature.feature.group"/>
         <requirement
             name="org.sonarlint.eclipse.jdt.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.elk.feature"/>
         <repository
             url="https://fabioz.github.com/startexplorer/update/"/>
         <repository
@@ -130,6 +132,8 @@
             url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
         <repository
             url="http://eclipse.sonarlint.org/"/>
+        <repository
+            url="http://build.eclipse.org/modeling/elk/updates/nightly/"/>
         <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
       </setupTask>
       <setupTask
