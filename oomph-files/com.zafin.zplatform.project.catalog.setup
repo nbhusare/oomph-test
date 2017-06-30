@@ -97,8 +97,6 @@
         <requirement
             name="net.sf.eclipsecs.feature.group"/>
         <requirement
-            name="com.mountainminds.eclemma.feature.feature.group"/>
-        <requirement
             name="net.sourceforge.eclipsejetty.feature.feature.group"/>
         <requirement
             name="org.eclipse.tm.terminal.feature.feature.group"/>
@@ -120,8 +118,6 @@
             url="http://findbugs.cs.umd.edu/eclipse"/>
         <repository
             url="http://eclipse-cs.sf.net/update"/>
-        <repository
-            url="http://update.eclemma.org/"/>
         <repository
             url="http://eclipse-jetty.github.io/update/"/>
         <repository
