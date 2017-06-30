@@ -109,8 +109,6 @@
         <requirement
             name="org.sonarlint.eclipse.feature.feature.group"/>
         <requirement
-            name="org.sonarlint.eclipse.jdt.feature.feature.group"/>
-        <requirement
             name="org.eclipse.elk.sdk.feature.feature.group"/>
         <repository
             url="https://fabioz.github.com/startexplorer/update/"/>
