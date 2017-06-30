@@ -2122,8 +2122,8 @@
         refresh="true"
         clean="true"/>
     <stream
-        name="CIT"
-        label="CIT"/>
+        name="NB_ZP-618_Final"
+        label="NB_ZP-618_Final"/>
     <logicalProjectContainer
         xsi:type="setup:ProjectCatalog"
         href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
