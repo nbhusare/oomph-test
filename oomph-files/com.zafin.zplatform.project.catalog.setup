@@ -68,6 +68,11 @@
           value="Oxygen"
           defaultValue="Oxygen"
           storageURI="scope://Workspace"/>
+      <setupTask
+          xsi:type="setup:VariableTask"
+          id="emf.compare.update.site"
+          name="emf.compare.update.site"
+          value="http://download.eclipse.org/modeling/emf/compare/updates/releases/latest"/>
       <description></description>
     </setupTask>
     <setupTask
@@ -2040,6 +2045,8 @@
               url="${zafin.update.site}"/>
           <repository
               url="${xtext.update.site}"/>
+          <repository
+              url="$emf.compare.update.site}"/>
         </repositoryList>
       </targlet>
     </setupTask>
