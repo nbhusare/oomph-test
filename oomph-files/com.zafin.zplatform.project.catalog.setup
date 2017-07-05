@@ -73,6 +73,11 @@
           id="emf.query.update.site"
           name="emf.query.update.site"
           value="https://projects.eclipse.org/projects/modeling.emf.query/releases/1.10.0/"/>
+      <setupTask
+          xsi:type="setup:VariableTask"
+          id="emf.update.site"
+          name="emf.update.site"
+          value="http://download.eclipse.org/modeling/emf/updates/releases/"/>
       <description></description>
     </setupTask>
     <setupTask
@@ -2046,7 +2051,7 @@
           <repository
               url="${emf.compare.update.site}"/>
           <repository
-              url="${emf.query.update.site}"/>
+              url="${emf.update.site}"/>
         </repositoryList>
       </targlet>
     </setupTask>
