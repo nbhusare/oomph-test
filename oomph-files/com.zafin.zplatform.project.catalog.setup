@@ -54,25 +54,25 @@
         name="Global variables">
       <setupTask
           xsi:type="setup:VariableTask"
-          id="zafin.update.site"
-          name="zafin.update.site"
-          value="https://zafindev.com:9443/artifactory/zafin-p2-oxygen/"/>
-      <setupTask
-          xsi:type="setup:VariableTask"
-          id="xtext.update.site"
-          name="xtext.update.site"
-          value="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.12.0/"/>
-      <setupTask
-          xsi:type="setup:VariableTask"
           name="eclipse.target.platform"
           value="Oxygen"
           defaultValue="Oxygen"
           storageURI="scope://Workspace"/>
       <setupTask
           xsi:type="setup:VariableTask"
+          id="zafin.update.site"
+          name="zafin.update.site"
+          value="https://zafindev.com:9443/artifactory/zafin-p2-oxygen/"/>
+      <setupTask
+          xsi:type="setup:VariableTask"
           id="emf.compare.update.site"
           name="emf.compare.update.site"
           value="http://download.eclipse.org/modeling/emf/compare/updates/releases/3.3/"/>
+      <setupTask
+          xsi:type="setup:VariableTask"
+          id="emf.query.update.site"
+          name="emf.query.update.site"
+          value="https://projects.eclipse.org/projects/modeling.emf.query/releases/1.10.0/"/>
       <description></description>
     </setupTask>
     <setupTask
@@ -2044,9 +2044,9 @@
           <repository
               url="${zafin.update.site}"/>
           <repository
-              url="${xtext.update.site}"/>
-          <repository
               url="$emf.compare.update.site}"/>
+          <repository
+              url="${emf.query.update.site}"/>
         </repositoryList>
       </targlet>
     </setupTask>
