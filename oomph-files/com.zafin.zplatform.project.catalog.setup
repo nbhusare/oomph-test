@@ -2050,8 +2050,6 @@
               url="${zafin.update.site}"/>
           <repository
               url="${emf.compare.update.site}"/>
-          <repository
-              url="${emf.update.site}"/>
         </repositoryList>
       </targlet>
     </setupTask>
