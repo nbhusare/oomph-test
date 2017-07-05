@@ -2044,7 +2044,7 @@
           <repository
               url="${zafin.update.site}"/>
           <repository
-              url="$emf.compare.update.site}"/>
+              url="${emf.compare.update.site}"/>
           <repository
               url="${emf.query.update.site}"/>
         </repositoryList>
