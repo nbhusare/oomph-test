@@ -63,21 +63,6 @@
           id="zafin.update.site"
           name="zafin.update.site"
           value="https://zafindev.com:9443/artifactory/zafin-p2-oxygen/"/>
-      <setupTask
-          xsi:type="setup:VariableTask"
-          id="emf.compare.update.site"
-          name="emf.compare.update.site"
-          value="http://download.eclipse.org/modeling/emf/compare/updates/releases/3.3/"/>
-      <setupTask
-          xsi:type="setup:VariableTask"
-          id="emf.query.update.site"
-          name="emf.query.update.site"
-          value="https://projects.eclipse.org/projects/modeling.emf.query/releases/1.10.0/"/>
-      <setupTask
-          xsi:type="setup:VariableTask"
-          id="emf.update.site"
-          name="emf.update.site"
-          value="http://download.eclipse.org/modeling/emf/updates/releases/"/>
       <description></description>
     </setupTask>
     <setupTask
@@ -2048,8 +2033,6 @@
               url="http://download.eclipse.org/cbi/updates/license"/>
           <repository
               url="${zafin.update.site}"/>
-          <repository
-              url="${emf.compare.update.site}"/>
         </repositoryList>
       </targlet>
     </setupTask>
