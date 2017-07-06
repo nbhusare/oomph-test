@@ -2028,7 +2028,7 @@
         <repositoryList
             name="Oxygen">
           <repository
-              url="http://download.eclipse.org/eclipse/updates/4.7"/>
+              url="http://download.eclipse.org/releases/oxygen/"/>
           <repository
               url="http://download.eclipse.org/cbi/updates/license"/>
           <repository
