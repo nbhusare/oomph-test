@@ -133,7 +133,7 @@
         <requirement
             name="de.cau.cs.kieler.klighd.sdk.feature.feature.group"/>
         <repository
-            url="http://rtsys.informatik.uni-kiel.de/~kieler/updatesite/"/>
+            url="https://zafindev.com:9443/artifactory/zafin-p2-oxygen/~kieler/updatesite"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -2033,6 +2033,8 @@
               url="http://download.eclipse.org/cbi/updates/license"/>
           <repository
               url="${zafin.update.site}"/>
+          <repository
+              url="https://zafindev.com:9443/artifactory/zafin-p2-oxygen/~kieler/updatesite"/>
         </repositoryList>
       </targlet>
     </setupTask>
