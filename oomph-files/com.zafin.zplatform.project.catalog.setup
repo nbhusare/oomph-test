@@ -60,9 +60,96 @@
           storageURI="scope://Workspace"/>
       <setupTask
           xsi:type="setup:VariableTask"
-          id="zafin.update.site"
-          name="zafin.update.site"
-          value="https://zafindev.com:9443/artifactory/zafin-p2-oxygen/"/>
+          id="zafin.source.repo"
+          name="zafin.source.repo"
+          value="https://bitbucket.org/zafinworks/zplatform.git"/>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          name="Update sites">
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="zafin.update.site"
+            name="zafin.update.site"
+            value="https://zafindev.com:9443/artifactory/zafin-p2-oxygen/"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="jbosstools.update.site"
+            name="jbosstools.update.site"
+            value="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-jdt-compiler/">
+          <description>jbosstools.update.site</description>
+        </setupTask>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="m2e.extensions.update.site"
+            name="m2e.extensions.update.site"
+            value="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/0.9.0.201609252021/"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="findbugs.update.site"
+            name="findbugs.update.site"
+            value="http://findbugs.cs.umd.edu/eclipse"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="cs.update.site"
+            name="cs.update.site"
+            value="http://eclipse-cs.sf.net/update"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="jetty.update.site"
+            name="jetty.update.site"
+            value="http://eclipse-jetty.github.io/update/"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="terminal.update.site"
+            name="terminal.update.site"
+            value="http://download.eclipse.org/tm/terminal/marketplace"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="ecoretools.update.site"
+            name="ecoretools.update.site"
+            value="http://download.eclipse.org/ecoretools/updates/nightly/3.3.0/oxygen"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="activiti.update.site"
+            name="activiti.update.site"
+            value="http://activiti.org/designer/update/"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="instasearch.update.site"
+            name="instasearch.update.site"
+            value="http://dl.bintray.com/ajermakovics/InstaSearch/"
+            defaultValue=""/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="sonarlint.update.site"
+            name="sonarlint.update.site"
+            value="http://eclipse.sonarlint.org/"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="elk.update.site"
+            name="elk.update.site"
+            value="http://build.eclipse.org/modeling/elk/updates/nightly/"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="xtext.update.site"
+            name="xtext.update.site"
+            value="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.12.0/"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="startexplorer.update.site"
+            name="startexplorer.update.site"
+            value="https://fabioz.github.com/startexplorer/update/"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="kieler.update.site"
+            name="kieler.update.site"
+            value="https://zafindev.com:9443/artifactory/zafin-p2-oxygen/~kieler/updatesite/release_pragmatics_2015-02/"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="swtbot.update.site"
+            name="swtbot.update.site"
+            value="http://download.eclipse.org/technology/swtbot/releases/latest/"/>
+      </setupTask>
       <description></description>
     </setupTask>
     <setupTask
@@ -78,9 +165,9 @@
         <requirement
             name="org.jboss.tools.m2e.jdt.feature.feature.group"/>
         <repository
-            url="http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-jdt-compiler/"/>
+            url="${jbosstools.update.site}"/>
         <repository
-            url="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/0.9.0.201412222151/"/>
+            url="${m2e.extensions.update.site}"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -106,27 +193,27 @@
         <requirement
             name="org.eclipse.elk.sdk.feature.feature.group"/>
         <repository
-            url="https://fabioz.github.com/startexplorer/update/"/>
+            url="${startexplorer.update.site}"/>
         <repository
-            url="http://findbugs.cs.umd.edu/eclipse"/>
+            url="${findbugs.update.site}"/>
         <repository
-            url="http://eclipse-cs.sf.net/update"/>
+            url="${cs.update.site}"/>
         <repository
-            url="http://eclipse-jetty.github.io/update/"/>
+            url="${jetty.update.site}"/>
         <repository
-            url="http://download.eclipse.org/tm/terminal/marketplace"/>
+            url="${terminal.update.site}"/>
         <repository
-            url="http://download.eclipse.org/ecoretools/updates/nightly/3.3.0/oxygen"/>
+            url="${ecoretools.update.site}"/>
         <repository
-            url="http://activiti.org/designer/update/"/>
+            url="${activiti.update.site}"/>
         <repository
-            url="http://dl.bintray.com/ajermakovics/InstaSearch/"/>
+            url="${instasearch.update.site}"/>
         <repository
-            url="http://eclipse.sonarlint.org/"/>
+            url="${sonarlint.update.site}"/>
         <repository
-            url="http://build.eclipse.org/modeling/elk/updates/nightly/"/>
+            url="${elk.update.site}"/>
         <repository
-            url="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.12.0/"/>
+            url="${xtext.update.site}"/>
         <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
       </setupTask>
       <setupTask
@@ -135,7 +222,7 @@
         <requirement
             name="de.cau.cs.kieler.klighd.sdk.feature.feature.group"/>
         <repository
-            url="https://zafindev.com:9443/artifactory/zafin-p2-oxygen/~kieler/updatesite/release_pragmatics_2015-02/"/>
+            url="${kieler.update.site}"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -149,7 +236,7 @@
         <requirement
             name="org.eclipse.swtbot.generator.feature.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/swtbot/releases/latest/"/>
+            url="${swtbot.update.site}"/>
         <description>UI testing framework</description>
       </setupTask>
       <setupTask
@@ -1987,7 +2074,7 @@
     <setupTask
         xsi:type="git:GitCloneTask"
         id="git.clone.zplatform"
-        remoteURI="https://bitbucket.org/zafinworks/zplatform.git">
+        remoteURI="${zafin.source.repo}">
       <description>${scope.project.label}</description>
     </setupTask>
     <setupTask
@@ -2036,7 +2123,7 @@
           <repository
               url="${zafin.update.site}"/>
           <repository
-              url="https://zafindev.com:9443/artifactory/zafin-p2-oxygen/~kieler/updatesite/release_pragmatics_2015-02/"/>
+              url="${kieler.update.site}"/>
         </repositoryList>
       </targlet>
     </setupTask>
