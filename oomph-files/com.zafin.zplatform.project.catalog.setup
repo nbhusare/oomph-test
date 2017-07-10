@@ -125,6 +125,8 @@
             url="http://eclipse.sonarlint.org/"/>
         <repository
             url="http://build.eclipse.org/modeling/elk/updates/nightly/"/>
+        <repository
+            url="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.12.0/"/>
         <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
       </setupTask>
       <setupTask
