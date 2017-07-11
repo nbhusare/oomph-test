@@ -143,7 +143,7 @@
             xsi:type="setup:VariableTask"
             id="kieler.update.site"
             name="kieler.update.site"
-            value="https://zafindev.com:9443/artifactory/zafin-p2-oxygen/~kieler/updatesite/release_pragmatics_2015-02/"/>
+            value="http://rtsys.informatik.uni-kiel.de/~kieler/updatesite/"/>
         <setupTask
             xsi:type="setup:VariableTask"
             id="swtbot.update.site"
@@ -151,109 +151,6 @@
             value="http://download.eclipse.org/technology/swtbot/releases/latest/"/>
       </setupTask>
       <description></description>
-    </setupTask>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="Eclipse IDE Plugins">
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="M2E">
-        <requirement
-            name="org.eclipse.m2e.feature.feature.group"/>
-        <requirement
-            name="org.sonatype.tycho.m2e.feature.feature.group"/>
-        <requirement
-            name="org.jboss.tools.m2e.jdt.feature.feature.group"/>
-        <repository
-            url="${jbosstools.update.site}"/>
-        <repository
-            url="${m2e.extensions.update.site}"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="Tools">
-        <requirement
-            name="de.bastiankrol.startexplorer.feature.feature.group"/>
-        <requirement
-            name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
-        <requirement
-            name="net.sf.eclipsecs.feature.group"/>
-        <requirement
-            name="net.sourceforge.eclipsejetty.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.tm.terminal.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.emf.ecoretools.design.feature.group"/>
-        <requirement
-            name="org.activiti.designer.feature.feature.group"/>
-        <requirement
-            name="it.unibz.instasearch.feature.indigo.feature.group"/>
-        <requirement
-            name="org.sonarlint.eclipse.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.elk.sdk.feature.feature.group"/>
-        <repository
-            url="${startexplorer.update.site}"/>
-        <repository
-            url="${findbugs.update.site}"/>
-        <repository
-            url="${cs.update.site}"/>
-        <repository
-            url="${jetty.update.site}"/>
-        <repository
-            url="${terminal.update.site}"/>
-        <repository
-            url="${ecoretools.update.site}"/>
-        <repository
-            url="${activiti.update.site}"/>
-        <repository
-            url="${instasearch.update.site}"/>
-        <repository
-            url="${sonarlint.update.site}"/>
-        <repository
-            url="${elk.update.site}"/>
-        <repository
-            url="${xtext.update.site}"/>
-        <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
-      </setupTask>
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="Kieler">
-        <requirement
-            name="de.cau.cs.kieler.klighd.sdk.feature.feature.group"/>
-        <repository
-            url="${kieler.update.site}"/>
-      </setupTask>
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          id="p2.swtbot"
-          label="SWTBot"
-          licenseConfirmationDisabled="true">
-        <requirement
-            name="org.eclipse.swtbot.eclipse.feature.group"/>
-        <requirement
-            name="org.eclipse.swtbot.ide.feature.group"/>
-        <requirement
-            name="org.eclipse.swtbot.generator.feature.feature.group"/>
-        <repository
-            url="${swtbot.update.site}"/>
-        <description>UI testing framework</description>
-      </setupTask>
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="Oomph Extensions">
-        <requirement
-            name="org.eclipse.oomph.setup.workingsets.feature.group"/>
-        <requirement
-            name="org.eclipse.oomph.setup.projects.feature.group"/>
-        <requirement
-            name="org.eclipse.oomph.setup.launching.feature.group"/>
-        <requirement
-            name="org.eclipse.oomph.setup.pde.feature.group"/>
-        <requirement
-            name="org.eclipse.oomph.setup.maven.feature.group"/>
-      </setupTask>
-      <description>All the Eclipse Plugins to be installed</description>
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
@@ -2070,6 +1967,109 @@
             key="/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.source"
             value="1.8"/>
       </setupTask>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="Eclipse IDE Plugins">
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="M2E">
+        <requirement
+            name="org.eclipse.m2e.feature.feature.group"/>
+        <requirement
+            name="org.sonatype.tycho.m2e.feature.feature.group"/>
+        <requirement
+            name="org.jboss.tools.m2e.jdt.feature.feature.group"/>
+        <repository
+            url="${jbosstools.update.site}"/>
+        <repository
+            url="${m2e.extensions.update.site}"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Tools">
+        <requirement
+            name="de.bastiankrol.startexplorer.feature.feature.group"/>
+        <requirement
+            name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
+        <requirement
+            name="net.sf.eclipsecs.feature.group"/>
+        <requirement
+            name="net.sourceforge.eclipsejetty.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.tm.terminal.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.ecoretools.design.feature.group"/>
+        <requirement
+            name="org.activiti.designer.feature.feature.group"/>
+        <requirement
+            name="it.unibz.instasearch.feature.indigo.feature.group"/>
+        <requirement
+            name="org.sonarlint.eclipse.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.elk.sdk.feature.feature.group"/>
+        <repository
+            url="${startexplorer.update.site}"/>
+        <repository
+            url="${findbugs.update.site}"/>
+        <repository
+            url="${cs.update.site}"/>
+        <repository
+            url="${jetty.update.site}"/>
+        <repository
+            url="${terminal.update.site}"/>
+        <repository
+            url="${ecoretools.update.site}"/>
+        <repository
+            url="${activiti.update.site}"/>
+        <repository
+            url="${instasearch.update.site}"/>
+        <repository
+            url="${sonarlint.update.site}"/>
+        <repository
+            url="${elk.update.site}"/>
+        <repository
+            url="${xtext.update.site}"/>
+        <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Kieler">
+        <requirement
+            name="de.cau.cs.kieler.klighd.sdk.feature.feature.group"/>
+        <repository
+            url="${kieler.update.site}"/>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          id="p2.swtbot"
+          label="SWTBot"
+          licenseConfirmationDisabled="true">
+        <requirement
+            name="org.eclipse.swtbot.eclipse.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.ide.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.generator.feature.feature.group"/>
+        <repository
+            url="${swtbot.update.site}"/>
+        <description>UI testing framework</description>
+      </setupTask>
+      <setupTask
+          xsi:type="setup.p2:P2Task"
+          label="Oomph Extensions">
+        <requirement
+            name="org.eclipse.oomph.setup.workingsets.feature.group"/>
+        <requirement
+            name="org.eclipse.oomph.setup.projects.feature.group"/>
+        <requirement
+            name="org.eclipse.oomph.setup.launching.feature.group"/>
+        <requirement
+            name="org.eclipse.oomph.setup.pde.feature.group"/>
+        <requirement
+            name="org.eclipse.oomph.setup.maven.feature.group"/>
+      </setupTask>
+      <description>All the Eclipse Plugins to be installed</description>
     </setupTask>
     <setupTask
         xsi:type="git:GitCloneTask"
