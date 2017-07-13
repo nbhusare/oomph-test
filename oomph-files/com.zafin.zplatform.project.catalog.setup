@@ -22,8 +22,8 @@
       id="workspace">
     <description></description>
   </setupTask>
-  <project name="zplatform"
-      label="zplatform">
+  <project name="ZPlatform"
+      label="ZPlatform">
     <setupTask
         xsi:type="jdt:JRETask"
         version="JavaSE-1.8"
