@@ -29,8 +29,8 @@
       option="-Doomph.redirection.zafinproject"
       value="=index:/redirectable.projects.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/master/oomph-files/com.zafin.zplatform.project.catalog.setup"
       vm="true"/>
-  <product name="zplatform"
-      label="zplatform">
+  <product name="ZPlatform"
+      label="ZPlatform">
     <version
         name="neon"
         label="Neon"
