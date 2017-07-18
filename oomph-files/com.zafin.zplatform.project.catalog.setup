@@ -62,7 +62,7 @@
           xsi:type="setup:VariableTask"
           id="zafin.source.repo"
           name="zafin.source.repo"
-          value="https://bitbucket.org/zafinworks/zplatform.git"/>
+          value="git@bitbucket.org:zafinworks/zplatform.git"/>
       <setupTask
           xsi:type="setup:CompoundTask"
           name="Update sites">
