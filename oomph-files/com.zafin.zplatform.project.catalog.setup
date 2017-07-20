@@ -150,6 +150,11 @@
             id="swtbot.update.site"
             name="swtbot.update.site"
             value="http://download.eclipse.org/technology/swtbot/releases/latest/"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            id="eclemma.update.site"
+            name="eclemma.update.site"
+            value="http://update.eclemma.org/"/>
       </setupTask>
       <description></description>
     </setupTask>
@@ -2009,6 +2014,8 @@
             name="org.sonarlint.eclipse.feature.feature.group"/>
         <requirement
             name="org.eclipse.elk.sdk.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.eclemma.feature.feature.group"/>
         <repository
             url="${startexplorer.update.site}"/>
         <repository
@@ -2031,6 +2038,8 @@
             url="${elk.update.site}"/>
         <repository
             url="${xtext.update.site}"/>
+        <repository
+            url="${eclemma.update.site}"/>
         <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
       </setupTask>
       <setupTask
