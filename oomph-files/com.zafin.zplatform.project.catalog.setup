@@ -187,7 +187,6 @@
           name="org.eclipse.core.resources">
         <setupTask
             xsi:type="setup:PreferenceTask"
-            excludedTriggers="MANUAL"
             key="/instance/org.eclipse.core.resources/encoding"
             value="UTF-8"/>
         <setupTask
