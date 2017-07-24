@@ -171,6 +171,7 @@
           value="false"/>
       <setupTask
           xsi:type="setup:PreferenceTask"
+          excludedTriggers="MANUAL"
           key="/instance/org.eclipse.m2e.core/eclipse.m2.userSettingsFile"
           value="${M2_HOME}/conf/settings.xml"/>
       <setupTask
@@ -186,6 +187,7 @@
           name="org.eclipse.core.resources">
         <setupTask
             xsi:type="setup:PreferenceTask"
+            excludedTriggers="MANUAL"
             key="/instance/org.eclipse.core.resources/encoding"
             value="UTF-8"/>
         <setupTask
@@ -1399,7 +1401,7 @@
         <setupTask
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.ui/formatter_profile"
-            value="_zafinFormatter"/>
+            value="_ZPlatformFormatter"/>
         <setupTask
             xsi:type="setup:PreferenceTask"
             key="/instance/org.eclipse.jdt.ui/formatter_settings_version"
