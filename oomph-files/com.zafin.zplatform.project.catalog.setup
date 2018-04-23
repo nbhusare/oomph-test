@@ -128,8 +128,7 @@
             xsi:type="setup:VariableTask"
             id="elk.update.site"
             name="elk.update.site"
-            value="http://download.eclipse.org/elk/updates/releases/0.3.0/"
-            defaultValue=""/>
+            value="http://download.eclipse.org/elk/updates/releases/0.3.0/"/>
         <setupTask
             xsi:type="setup:VariableTask"
             id="xtext.update.site"
@@ -2217,8 +2216,8 @@
         refresh="true"
         clean="true"/>
     <stream
-        name="ad_NB_ZP-618_Final"
-        label="ad_NB_ZP-618_Final"/>
+        name="CIT"
+        label="CIT"/>
     <logicalProjectContainer
         xsi:type="setup:ProjectCatalog"
         href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
