@@ -128,7 +128,8 @@
             xsi:type="setup:VariableTask"
             id="elk.update.site"
             name="elk.update.site"
-            value="http://build.eclipse.org/modeling/elk/updates/nightly/"/>
+            value="http://download.eclipse.org/elk/updates/releases/0.3.0/"
+            defaultValue=""/>
         <setupTask
             xsi:type="setup:VariableTask"
             id="xtext.update.site"
