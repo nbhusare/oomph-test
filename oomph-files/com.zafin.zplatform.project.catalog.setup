@@ -70,7 +70,7 @@
             xsi:type="setup:VariableTask"
             id="zafin.update.site"
             name="zafin.update.site"
-            value="https://continuousintegration.zafinworks.com/artifactory/zafin-repos/zafin-p2-oxygen/"/>
+            value="https://continuousintegration.zafinworks.com/artifactory/zafin-p2-oxygen/"/>
         <setupTask
             xsi:type="setup:VariableTask"
             id="jbosstools.update.site"
