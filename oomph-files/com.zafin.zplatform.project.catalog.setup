@@ -133,7 +133,7 @@
             xsi:type="setup:VariableTask"
             id="xtext.update.site"
             name="xtext.update.site"
-            value="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.15.0/"/>
+            value="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.16.0/"/>
         <setupTask
             xsi:type="setup:VariableTask"
             id="startexplorer.update.site"
@@ -2169,6 +2169,18 @@
               xsi:type="workingsets:ExclusionPredicate"/>
         </predicate>
       </workingSet>
+      <workingSet
+          name="zPlatform IDE">
+        <predicate
+            xsi:type="predicates:AndPredicate">
+          <operand
+              xsi:type="predicates:RepositoryPredicate"
+              project="com.zafin.zplatform.dsl.znls"/>
+          <operand
+              xsi:type="predicates:NamePredicate"
+              pattern=".*ide\..*"/>
+        </predicate>
+      </workingSet>
       <description>The dynamic working sets for ${scope.project.label}</description>
     </setupTask>
     <setupTask
@@ -2194,38 +2206,18 @@
           launcher="server">
         <description>Launches the Maven &quot;server&quot; build</description>
       </setupTask>
+      <setupTask
+          xsi:type="launching:LaunchTask"
+          id="ide-build"
+          filter=""
+          launcher="ide">
+        <description>Launches the Maven &quot;ide&quot; build</description>
+      </setupTask>
     </setupTask>
     <setupTask
         xsi:type="projects:ProjectsBuildTask"
         refresh="true"
         clean="true"/>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="Choose Role">
-      <setupTask
-          xsi:type="setup:VariableTask"
-          name="zp.role"
-          label="ZP Role">
-        <choice
-            value="ide"
-            label="ZP Developer"/>
-        <choice
-            value="qa"
-            label="ZP QA"/>
-      </setupTask>
-    </setupTask>
-    <setupTask
-        xsi:type="setup:CompoundTask"
-        name="Role">
-      <setupTask
-          xsi:type="setup:CompoundTask"
-          filter="(zp.role=developer)"
-          name="Developer"/>
-      <setupTask
-          xsi:type="setup:CompoundTask"
-          filter="(zp.role=qa)"
-          name="QA"/>
-    </setupTask>
     <stream
         name="CIT"
         label="CIT"/>
