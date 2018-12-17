@@ -55,8 +55,8 @@
       <setupTask
           xsi:type="setup:VariableTask"
           name="eclipse.target.platform"
-          value="Oxygen"
-          defaultValue="Oxygen"
+          value="SimRel"
+          defaultValue="SimRel"
           storageURI="scope://Workspace"/>
       <setupTask
           xsi:type="setup:VariableTask"
@@ -70,7 +70,7 @@
             xsi:type="setup:VariableTask"
             id="zafin.update.site"
             name="zafin.update.site"
-            value="https://continuousintegration.zafinworks.com/artifactory/zafin-p2-oxygen/"/>
+            value="https://continuousintegration.zafinworks.com/artifactory/zafin-p2-simrel/"/>
         <setupTask
             xsi:type="setup:VariableTask"
             id="jbosstools.update.site"
@@ -128,12 +128,12 @@
             xsi:type="setup:VariableTask"
             id="elk.update.site"
             name="elk.update.site"
-            value="http://download.eclipse.org/elk/updates/releases/0.3.0/"/>
+            value="http://download.eclipse.org/elk/updates/releases/0.4.1/"/>
         <setupTask
             xsi:type="setup:VariableTask"
             id="xtext.update.site"
             name="xtext.update.site"
-            value="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.12.0/"/>
+            value="http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.15.0/"/>
         <setupTask
             xsi:type="setup:VariableTask"
             id="startexplorer.update.site"
@@ -155,6 +155,14 @@
             id="eclemma.update.site"
             name="eclemma.update.site"
             value="http://update.eclemma.org/"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            name="emf.compare.update.site"
+            value="http://download.eclipse.org/modeling/emf/compare/updates/releases/3.3/R201806221350/"/>
+        <setupTask
+            xsi:type="setup:VariableTask"
+            name="mylyn.update.site"
+            value=" http://download.eclipse.org/mylyn/incubator/latest  "/>
       </setupTask>
       <description></description>
     </setupTask>
@@ -2107,9 +2115,9 @@
         <requirement
             name="org.activiti.designer.feature.feature.group"/>
         <repositoryList
-            name="Oxygen">
+            name="SimRel">
           <repository
-              url="http://download.eclipse.org/releases/oxygen/"/>
+              url="ttp://download.eclipse.org/releases/2018-09/"/>
           <repository
               url="http://download.eclipse.org/cbi/updates/license"/>
           <repository
@@ -2191,6 +2199,33 @@
         xsi:type="projects:ProjectsBuildTask"
         refresh="true"
         clean="true"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="Choose Role">
+      <setupTask
+          xsi:type="setup:VariableTask"
+          name="zp.role"
+          label="ZP Role">
+        <choice
+            value="ide"
+            label="ZP Developer"/>
+        <choice
+            value="qa"
+            label="ZP QA"/>
+      </setupTask>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="Role">
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          filter="(zp.role=developer)"
+          name="Developer"/>
+      <setupTask
+          xsi:type="setup:CompoundTask"
+          filter="(zp.role=qa)"
+          name="QA"/>
+    </setupTask>
     <stream
         name="CIT"
         label="CIT"/>
