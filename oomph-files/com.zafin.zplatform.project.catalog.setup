@@ -1999,8 +1999,6 @@
           xsi:type="setup.p2:P2Task"
           label="Tools">
         <requirement
-            name="de.bastiankrol.startexplorer.feature.feature.group"/>
-        <requirement
             name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
         <requirement
             name="net.sf.eclipsecs.feature.group"/>
