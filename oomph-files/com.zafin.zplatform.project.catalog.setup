@@ -2016,6 +2016,8 @@
             name="org.eclipse.eclemma.feature.feature.group"/>
         <repository
             url="${zafin.update.site}"/>
+        <repository
+            url="${jetty.update.site}"/>
         <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
       </setupTask>
       <setupTask
