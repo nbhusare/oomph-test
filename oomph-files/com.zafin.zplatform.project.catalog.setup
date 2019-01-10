@@ -2030,6 +2030,8 @@
             url="${elk.update.site}"/>
         <repository
             url="${eclemma.update.site}"/>
+        <repository
+            url="${instasearch.update.site}"/>
         <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
       </setupTask>
       <setupTask
