@@ -1993,7 +1993,7 @@
         <requirement
             name="org.jboss.tools.m2e.jdt.feature.feature.group"/>
         <repository
-            url="${zafin.update.site}"/>
+            url="${jbosstools.update.site}"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -2044,7 +2044,7 @@
         <requirement
             name="de.cau.cs.kieler.klighd.sdk.feature.feature.group"/>
         <repository
-            url="${zafin.update.site}"/>
+            url="${kieler.update.site}"/>
       </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
@@ -2058,7 +2058,7 @@
         <requirement
             name="org.eclipse.swtbot.generator.feature.feature.group"/>
         <repository
-            url="${zafin.update.site}"/>
+            url="${swtbot.update.site}"/>
         <description>UI testing framework</description>
       </setupTask>
       <setupTask
