@@ -2018,6 +2018,18 @@
             url="${zafin.update.site}"/>
         <repository
             url="${jetty.update.site}"/>
+        <repository
+            url="${terminal.update.site}"/>
+        <repository
+            url="${ecoretools.update.site}"/>
+        <repository
+            url="${activiti.update.site}"/>
+        <repository
+            url="${sonarlint.update.site}"/>
+        <repository
+            url="${elk.update.site}"/>
+        <repository
+            url="${eclemma.update.site}"/>
         <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
       </setupTask>
       <setupTask
