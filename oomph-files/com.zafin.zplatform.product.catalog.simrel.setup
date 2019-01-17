@@ -47,16 +47,16 @@
           label="Eclipse DSL Tools (2018-12)">
         <requirement
             name="epp.package.dsl"
-            versionRange="[4.9.0,5.0.0)"/>
+            versionRange="[4.10.0,5.0.0)"/>
         <requirement
             name="org.eclipse.platform.feature.group"
-            versionRange="[4.9.0,5.0.0)"/>
+            versionRange="[4.10.0,5.0.0)"/>
         <requirement
             name="org.eclipse.rcp.feature.group"
-            versionRange="[4.9.0,5.0.0)"/>
+            versionRange="[4.10.0,5.0.0)"/>
         <requirement
             name="org.eclipse.jdt.feature.group"
-            versionRange="[3.15.0,4.0.0)"/>
+            versionRange="[3.16.0,4.0.0)"/>
         <requirement
             name="org.eclipse.pde.feature.group"
             versionRange="[3.13.0,4.0.0)"/>
@@ -72,10 +72,14 @@
             name="org.eclipse.lsp4j.sdk.feature.group"/>
         <requirement
             name="org.eclipse.xtext.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.eclipse.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.ide.feature.group"/>
         <repository
-            url="http://download.eclipse.org/technology/epp/packages/2018-09"/>
+            url="http://download.eclipse.org/technology/epp/packages/2018-12"/>
         <repository
-            url="http://download.eclipse.org/releases/2018-09/201809191002"/>
+            url="http://download.eclipse.org/releases/2018-12/201812191000"/>
       </setupTask>
     </version>
   </product>
