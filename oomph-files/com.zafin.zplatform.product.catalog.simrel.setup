@@ -86,10 +86,16 @@
             name="org.eclipse.mylyn.context_feature.feature.group"/>
         <requirement
             name="org.eclipse.swtbot.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.rcp.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.recommenders.snipmatch.rcp.feature.feature.group"/>
         <repository
             url="http://download.eclipse.org/technology/epp/packages/2018-12"/>
         <repository
             url="http://download.eclipse.org/releases/2018-12/201812191000"/>
+        <repository
+            url="https://download.eclipse.org/recommenders/updates/stable/"/>
       </setupTask>
     </version>
   </product>
