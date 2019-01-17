@@ -13,13 +13,6 @@
     <description></description>
   </setupTask>
   <setupTask
-      xsi:type="setup.p2:P2Task">
-    <requirement
-        name="org.eclipse.oomph.setup.feature.group"/>
-    <repository
-        url="${oomph.update.url}"/>
-  </setupTask>
-  <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Doomph.redirection.zafinproduct"
       value="=index:/redirectable.products.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/ZP-3105/oomph-files/com.zafin.zplatform.product.catalog.simrel.setup"
@@ -29,6 +22,13 @@
       option="-Doomph.redirection.zafinproject"
       value="=index:/redirectable.projects.setup->https://raw.githubusercontent.com/nbhusare/oomph-test/ZP-3105/oomph-files/com.zafin.zplatform.project.catalog.simrel.setup"
       vm="true"/>
+  <setupTask
+      xsi:type="setup.p2:P2Task">
+    <requirement
+        name="org.eclipse.oomph.setup.feature.group"/>
+    <repository
+        url="${oomph.update.url}"/>
+  </setupTask>
   <product name="ZPlatform"
       label="ZPlatform">
     <version
@@ -39,7 +39,7 @@
           source="http://www.eclipse.org/oomph/setup/BrandingInfo">
         <detail
             key="siteURI">
-          <value>https://www.eclipse.org/downloads/packages/release/2018-09/r/eclipse-ide-java-and-dsl-developers</value>
+          <value>https://www.eclipse.org/downloads/packages/release/2018-12/r/eclipse-ide-java-and-dsl-developers</value>
         </detail>
       </annotation>
       <setupTask
