@@ -39,6 +39,10 @@
       <description>Initialize JDT's package explorer to show working sets as its root objects</description>
     </setupTask>
     <setupTask
+        xsi:type="setup:ResourceCreationTask"
+        content=""
+        targetURL="configuration:/.settings/org.eclipse.ui.ide.prefs"/>
+    <setupTask
         xsi:type="setup:CompoundTask"
         name="Eclipse.ini settings">
       <setupTask

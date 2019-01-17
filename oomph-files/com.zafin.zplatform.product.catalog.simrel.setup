@@ -73,9 +73,19 @@
         <requirement
             name="org.eclipse.xtext.sdk.feature.group"/>
         <requirement
-            name="org.eclipse.swtbot.eclipse.feature.group"/>
+            name="org.eclipse.emf.compare.feature.group"/>
         <requirement
-            name="org.eclipse.swtbot.ide.feature.group"/>
+            name="org.eclipse.wst.xml_ui.feature.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.ecoretools.design.feature.group"/>
+        <requirement
+            name="org.eclipse.emf.ecoretools.sdk.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.mylyn.context_feature.feature.group"/>
+        <requirement
+            name="org.eclipse.swtbot.feature.group"/>
         <repository
             url="http://download.eclipse.org/technology/epp/packages/2018-12"/>
         <repository
