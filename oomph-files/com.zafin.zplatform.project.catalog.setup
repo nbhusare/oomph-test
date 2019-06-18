@@ -1990,8 +1990,6 @@
             name="org.eclipse.m2e.feature.feature.group"/>
         <requirement
             name="org.sonatype.tycho.m2e.feature.feature.group"/>
-        <requirement
-            name="org.jboss.tools.m2e.jdt.feature.feature.group"/>
         <repository
             url="${zafin.update.site}"/>
       </setupTask>
