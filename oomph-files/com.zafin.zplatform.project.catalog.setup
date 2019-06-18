@@ -1999,8 +1999,6 @@
           xsi:type="setup.p2:P2Task"
           label="Tools">
         <requirement
-            name="edu.umd.cs.findbugs.plugin.eclipse.feature.group"/>
-        <requirement
             name="net.sf.eclipsecs.feature.group"/>
         <requirement
             name="net.sourceforge.eclipsejetty.feature.feature.group"/>
@@ -2013,11 +2011,7 @@
         <requirement
             name="it.unibz.instasearch.feature.indigo.feature.group"/>
         <requirement
-            name="org.sonarlint.eclipse.feature.feature.group"/>
-        <requirement
             name="org.eclipse.elk.sdk.feature.feature.group"/>
-        <requirement
-            name="org.eclipse.eclemma.feature.feature.group"/>
         <repository
             url="${zafin.update.site}"/>
         <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
