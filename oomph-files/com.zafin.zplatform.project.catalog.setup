@@ -1999,8 +1999,6 @@
           xsi:type="setup.p2:P2Task"
           label="Tools">
         <requirement
-            name="net.sf.eclipsecs.feature.group"/>
-        <requirement
             name="net.sourceforge.eclipsejetty.feature.feature.group"/>
         <requirement
             name="org.eclipse.tm.terminal.feature.feature.group"/>
