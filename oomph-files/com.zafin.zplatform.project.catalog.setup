@@ -1997,8 +1997,6 @@
           xsi:type="setup.p2:P2Task"
           label="Tools">
         <requirement
-            name="org.eclipse.emf.ecoretools.design.feature.group"/>
-        <requirement
             name="org.activiti.designer.feature.feature.group"/>
         <requirement
             name="org.eclipse.elk.sdk.feature.feature.group"/>
