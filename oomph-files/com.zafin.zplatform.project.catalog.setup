@@ -2062,8 +2062,6 @@
         <requirement
             name="org.eclipse.emf.compare.feature.group"/>
         <requirement
-            name="de.cau.cs.kieler.klighd.sdk.feature.feature.group"/>
-        <requirement
             name="org.activiti.designer.feature.feature.group"/>
         <repositoryList
             name="Oxygen">
