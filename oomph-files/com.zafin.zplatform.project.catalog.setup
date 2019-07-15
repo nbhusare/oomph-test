@@ -80,11 +80,6 @@
         </setupTask>
         <setupTask
             xsi:type="setup:VariableTask"
-            id="m2e.extensions.update.site"
-            name="m2e.extensions.update.site"
-            value="http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-tycho/0.9.0/N/0.9.0.201609252021/"/>
-        <setupTask
-            xsi:type="setup:VariableTask"
             id="findbugs.update.site"
             name="findbugs.update.site"
             value="http://findbugs.cs.umd.edu/eclipse"/>
@@ -1983,16 +1978,6 @@
     <setupTask
         xsi:type="setup:CompoundTask"
         name="Eclipse IDE Plugins">
-      <setupTask
-          xsi:type="setup.p2:P2Task"
-          label="M2E">
-        <requirement
-            name="org.eclipse.m2e.feature.feature.group"/>
-        <requirement
-            name="org.sonatype.tycho.m2e.feature.feature.group"/>
-        <repository
-            url="${zafin.update.site}"/>
-      </setupTask>
       <setupTask
           xsi:type="setup.p2:P2Task"
           label="Tools">
